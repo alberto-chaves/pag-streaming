@@ -14,17 +14,19 @@
 
 .logo h1 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 10rem;
+    font-size: 12rem;
     font-weight: bold;
+    margin-bottom: 40px;
     background-image: linear-gradient(#4c06fd, #ec45ac);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.form{
-    max-width: 400px;
-    max-height:450px ;
+.form {
+    min-width: 400px;
+    min-height: 350px ;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.801);
     border-radius: 50px 10px;
     display: flex;
@@ -36,21 +38,7 @@
     position: relative;
 }
 
-.form h1{
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
-
-img{
-   width:80%;
-   margin-left: 12%;
-   margin-top: 13%;
-   padding-bottom: 50%;
-   position: relative;
-}
-
-
-.image-user{
+.image-user {
     position: relative;
     top: -50px;
     background:linear-gradient( to top  ,#4c06fd, #ec45ac);
@@ -59,70 +47,64 @@ img{
     border-radius: 50%;
     box-shadow: 0 1px 10px 5px;
 }
+.image-user img{
+    width:80%;
+    margin-left: 12%;
+    margin-top: 13%;
+    padding-bottom: 50%;
+    position: relative;
+}
 
+.form h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
 
-.submit{
-    position: relative;
-    margin: 5x 150px 80px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin-left: 0px;
-    padding-bottom: 20px;
+.inputs {
+    display: flex;
+    flex-direction: column;
 }
-.email{
-    width: 220px;
-    padding: 13px;
+.inputs .email,
+.inputs .password {
+    min-width: 250px;
+    padding: 15px;
     background: transparent;
-    border:none ;
-    position: relative;
-    bottom: 20px;
-    margin-left: 25px;
-    color: #fff;
-    border:none;
-    border-bottom: 2px solid #fff;
-    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    margin-bottom: 20px;
     outline: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
-.email::placeholder{
-    font-weight: 600;
-    font-size: 12px;
-}
-.botoes input:hover{
-    background: #4645457a;
-}
-.password{
-    width: 220px;
-    padding: 13px;
-    background: transparent;
-    border:none ;
-    position: relative;
-    bottom: 25px;
-    margin-left: 25px;
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    outline: none;
-}
-.password::placeholder{
-    font-weight: 600;
-    font-size: 12px;
-}
+
 .btn-signIn{
-    width: 220px;
+    width: 250px;
     padding:9px;
     border:none;
     color:#fff;
     background:linear-gradient(to right, #4c06fd, #ec45ac);
     border-radius: 5px;
     font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     cursor: pointer;
     transition: filter 0.8s;
-    margin-bottom: 10%;
-
-    
+    margin: 30px 0;
 }
 .btn-signIn:hover{
     filter: brightness(0.8);
+}
+
+.submit {
+    position: relative;
+    margin: 5x 150px 80px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-left: 0px;
+    padding-bottom: 20px;
 }
 .submit a{
    display: flex;
@@ -132,6 +114,7 @@ img{
    margin-left:0%;
    text-decoration: none;
    margin-bottom: 30px;
+   font-family: 'Open Sans', sans-serif;
    font-size: 24px;
 }
 .submit a:hover{
