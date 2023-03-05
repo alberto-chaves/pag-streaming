@@ -127,29 +127,71 @@ text-decoration: underline;
 
 @media screen and (min-width:426px) and (max-width: 768px) {
     .logo h1 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 321px) and (max-width: 425px) {
     .logo h1 {
-        font-size: 5rem;
-        margin-bottom: 80px;
-    }
-
-    .form {
-        min-width: 380px;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 424px) {
-    .logo h1 {
-        font-size: 0.2rem;
+        font-size: 4.5rem;
+        position: relative;
+        top: -25px;
     }
 
     .form {
         min-width: 300px;
-        padding: 0;
+        max-height: 300px;
+        padding: 20px;
     }
+    .image-user {
+        width: 18%;
+        height: 17%;
+        top: 1%;
+    }
+    .form h2 {
+        margin: 15px;
+    }
+    .submit a {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo h1 {
+        font-size: 4rem;
+        position: relative;
+        top: -25px;
+    }
+
+    .form {
+        min-width: 280px;
+        max-height: 300px;
+        padding: 10px;
+    }
+    .image-user {
+        width: 18%;
+        height: 17%;
+        top: -5%;
+    }
+    .image-user img {
+        margin-top: 10%;
+    }
+    .form h2 {
+        margin-bottom: 20px;
+    }
+    .inputs .email,
+    .inputs .password {
+        min-width: 200px;
+        margin-bottom: 15px;
+    }
+    .btn-signIn {
+        margin: 20px 0;
+        max-width: 230px;
+    }
+    .submit a {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
 }
