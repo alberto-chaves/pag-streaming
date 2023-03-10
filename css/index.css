@@ -1,21 +1,36 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700;800;900&family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap');
+
 
 #container{
     height: 100vh;
+    width: 100vw;
     background-image: url(../img/fundo.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content:center ;
-   
+
 }
 
-.form{
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    max-height:300px ;
+.logo h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background-image: linear-gradient(#4c06fd, #ec45ac);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.form {
+    min-width: 400px;
+    min-height: 350px ;
+    padding: 10px;
+
     background: rgba(0, 0, 0, 0.801);
     border-radius: 50px 10px;
     display: flex;
@@ -23,6 +38,8 @@
     justify-content: center;
     flex-direction: column;
     color:#9107ec;
+
+
     box-shadow: 0 20px 20px;
     margin-bottom: 120px;
     margin-left: 130px;
@@ -56,72 +73,75 @@ img{
    border-radius: 50%;
    margin-bottom: 7%;
    box-shadow: 0 10px 10px;
-   
 }
 
+.image-user {
+    position: relative;
+    top: -50px;
+    background:linear-gradient( to top  ,#4c06fd, #ec45ac);
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 5px;
+}
+.image-user img{
+    width:80%;
+    margin-left: 12%;
+    margin-top: 13%;
+    padding-bottom: 50%;
+    position: relative;
+}
 
-.submit{
-    position: relative;
-    margin: 5x 150px 80px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin-left: 0px;
-    padding-bottom: 20px;
-}
-.email{
-    width: 220px;
-    padding: 13px;
-    background: transparent;
-    border:none ;
-    position: relative;
-    bottom: 20px;
-    margin-left: 25px;
+.form h2 {
     color: #fff;
-    border:none;
-    border-bottom: 2px solid #fff;
-    margin-bottom: 10px;
-    outline: none;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
 }
-.email::placeholder{
-    font-weight: 600;
-    font-size: 12px;
+
+.inputs {
+    display: flex;
+    flex-direction: column;
 }
-.botoes input:hover{
-    background: #4645457a;
-}
-.password{
-    width: 220px;
-    padding: 13px;
+.inputs .email,
+.inputs .password {
+    min-width: 250px;
+    padding: 15px;
     background: transparent;
-    border:none ;
-    position: relative;
-    bottom: 25px;
-    margin-left: 25px;
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    margin-bottom: 20px;
     outline: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
-.password::placeholder{
-    font-weight: 600;
-    font-size: 12px;
-}
+
 .btn-signIn{
-    width: 220px;
+    width: 250px;
     padding:9px;
     border:none;
     color:#fff;
     background:linear-gradient(to right, #4c06fd, #ec45ac);
     border-radius: 5px;
     font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     cursor: pointer;
     transition: filter 0.8s;
-    margin-bottom: 10%;
-
-    
+    margin: 30px 0;
 }
 .btn-signIn:hover{
     filter: brightness(0.8);
+}
+
+.submit {
+    position: relative;
+    margin: 5x 150px 80px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-left: 0px;
+    padding-bottom: 20px;
 }
 .submit a{
    display: flex;
@@ -131,8 +151,84 @@ img{
    margin-left:0%;
    text-decoration: none;
    margin-bottom: 30px;
+   font-family: 'Open Sans', sans-serif;
    font-size: 24px;
 }
 .submit a:hover{
 text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (min-width:426px) and (max-width: 768px) {
+    .logo h1 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+    .logo h1 {
+        font-size: 4.5rem;
+        position: relative;
+        top: -25px;
+    }
+
+    .form {
+        min-width: 300px;
+        max-height: 300px;
+        padding: 20px;
+    }
+    .image-user {
+        width: 18%;
+        height: 17%;
+        top: 1%;
+    }
+    .form h2 {
+        margin: 15px;
+    }
+    .submit a {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo h1 {
+        font-size: 4rem;
+        position: relative;
+        top: -25px;
+    }
+
+    .form {
+        min-width: 280px;
+        max-height: 300px;
+        padding: 10px;
+    }
+    .image-user {
+        width: 18%;
+        height: 17%;
+        top: -5%;
+    }
+    .image-user img {
+        margin-top: 10%;
+    }
+    .form h2 {
+        margin-bottom: 20px;
+    }
+    .inputs .email,
+    .inputs .password {
+        min-width: 200px;
+        margin-bottom: 15px;
+    }
+    .btn-signIn {
+        margin: 20px 0;
+        max-width: 230px;
+    }
+    .submit a {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
 }
