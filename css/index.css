@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700;800;900&family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap');
+
 
 #container{
     height: 100vh;
@@ -10,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content:center ;
+
 }
 
 .logo h1 {
@@ -27,6 +30,7 @@
     min-width: 400px;
     min-height: 350px ;
     padding: 10px;
+
     background: rgba(0, 0, 0, 0.801);
     border-radius: 50px 10px;
     display: flex;
@@ -34,8 +38,41 @@
     justify-content: center;
     flex-direction: column;
     color:#9107ec;
-    box-shadow: 5px 5px 20px;
-    position: relative;
+
+
+    box-shadow: 0 20px 20px;
+    margin-bottom: 120px;
+    margin-left: 130px;
+   
+}
+   .logo {
+   position:absolute;
+   margin-bottom: 330px;
+  
+   }
+h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+   width:80%;
+   margin-left: 8%;
+   margin-top: 13%;
+   padding-bottom: 50%;
+   position: relative;
+  
+   
+}
+.image-user{
+   left: 0;
+   right: 0;
+   background:linear-gradient( to top  , #0f0f0f, #3b3bf5);
+   width: 20%;
+   height: 20%;
+   border-radius: 50%;
+   margin-bottom: 7%;
+   box-shadow: 0 10px 10px;
 }
 
 .image-user {
